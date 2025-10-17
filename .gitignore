@@ -8,47 +8,86 @@
 ## Get latest from https://github.com/github/gitignore/blob/main/Dotnet.gitignore
 
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-[Ww][Ii][Nn]32/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-bld/
 [Bb]in/
 [Oo]bj/
-[Ll]og/
-[Ll]ogs/
-
-# .NET Core
-project.lock.json
-project.fragment.lock.json
+publish/
 artifacts/
 
-# ASP.NET Scaffolding
-ScaffoldingReadMe.txt
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# NuGet Packages
+# VS Code
+.vscode/
+
+# Rider/IDE
+.idea/
+*.iml
+
+# .NET Core / NuGet
+project.lock.json
+project.fragment.lock.json
 *.nupkg
-# NuGet Symbol Packages
 *.snupkg
+packages/
 
-# Others
+# ASP.NET Core
+appsettings.Development.json
+appsettings.*.Development.json
+launchSettings.json
+wwwroot/dist/
+wwwroot/node_modules/
+
+# User secrets / local secrets file(s)
+secrets.txt
+secrets.json
+*.secret
+
+# Logs, caches, temp files
+[Ll]og/
+[Ll]ogs/
+*.log
+*.tmp
 ~$*
 *~
-CodeCoverage/
 
-# MSBuild Binary and Structured Log
-*.binlog
-
-# MSTest test Results
+# Test results / coverage
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
-
-# NUnit
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+coverage*.xml
+CodeCoverage/
+
+# MSBuild
+*.binlog
+
+# Runtime / generated files
+*.pid
+*.seed
+*.db
+*.sqlite
+*.db-journal
+*.pdb
+
+# Obj and generated files already covered above but keep common patterns
+*.generated.cs
+*.g.cs
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# REST API specific
+.env
+.env.*
+*.http
+http-client.env.json
+
+# Ignore secrets.txt explicitly (already included above for clarity)
+secrets.txt

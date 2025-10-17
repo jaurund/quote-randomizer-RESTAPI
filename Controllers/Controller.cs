@@ -21,12 +21,15 @@ public class QuoteController : ControllerBase
         return Enumerable.Range(1, 36).Select(index => new QuoteArray
         {
 
-        // Generate a random index within the array's bounds
+        }
+}
+
+/*
+// Generate a random index within the array's bounds
         int randomIndex = random.Next(0, fruits.Length);
 
         // Retrieve the string at the random index
         string randomFruit = fruits[randomIndex];
         })
         .ToArray();
-    }
-}
+*/
